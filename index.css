@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f7;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-box,
+.total-box,
+.filter-box,
+.expense-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #287a45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f6036;
+}
+
+.total-box {
+    text-align: center;
+}
+
+#total {
+    font-size: 30px;
+    font-weight: bold;
+    color: #287a45;
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-box select {
+    width: 200px;
+    margin: 0;
+}
+
+.expense {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-info h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.expense-info p {
+    color: #777;
+}
+
+.amount {
+    color: #d43f3f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    width: auto;
+    padding: 8px 12px;
+    background-color: #d43f3f;
+}
+
+.delete-btn:hover {
+    background-color: #a92d2d;
+}
+
+.empty {
+    text-align: center;
+    color: #777;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .filter-box {
+        display: block;
+    }
+
+    .filter-box select {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .expense {
+        display: block;
+    }
+
+    .amount {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .delete-btn {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
